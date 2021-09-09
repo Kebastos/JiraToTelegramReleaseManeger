@@ -3,7 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiraToTelegramReleaseManeger", "JiraToTelegramReleaseManeger\JiraToTelegramReleaseManeger.csproj", "{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiraToTelegramReleaseManager", "src\JiraToTelegramReleaseManeger\JiraToTelegramReleaseManager.csproj", "{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9498AAAE-759E-498B-A96F-960D69041954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{39900BED-3956-46AA-B4B2-5D53569BBFB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiraToTelegramReleaseManagerTest", "JiraToTelegramReleaseManagerTest\JiraToTelegramReleaseManagerTest.csproj", "{7091616D-5CC1-4133-8D81-04C5FC2D069E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiraToTelegramReleaseManager.Common", "JiraToTelegramReleaseManager.Common\JiraToTelegramReleaseManager.Common.csproj", "{4D7368ED-C5BD-4FEA-A165-E89D517B22AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiraToTelegramReleaseManager.Logic", "JiraToTelegramReleaseManager.Logic\JiraToTelegramReleaseManager.Logic.csproj", "{610C0584-03CD-464C-8E82-2482A55259B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{5348DC7D-C735-4389-B598-A4DB34B82C1B}"
+	ProjectSection(SolutionItems) = preProject
+		.Dockerfile = .Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +30,27 @@ Global
 		{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7091616D-5CC1-4133-8D81-04C5FC2D069E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7091616D-5CC1-4133-8D81-04C5FC2D069E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7091616D-5CC1-4133-8D81-04C5FC2D069E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7091616D-5CC1-4133-8D81-04C5FC2D069E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7368ED-C5BD-4FEA-A165-E89D517B22AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7368ED-C5BD-4FEA-A165-E89D517B22AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7368ED-C5BD-4FEA-A165-E89D517B22AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7368ED-C5BD-4FEA-A165-E89D517B22AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610C0584-03CD-464C-8E82-2482A55259B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610C0584-03CD-464C-8E82-2482A55259B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610C0584-03CD-464C-8E82-2482A55259B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610C0584-03CD-464C-8E82-2482A55259B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1ADB9157-DB41-4CCB-922A-DF4C8A8DC252} = {9498AAAE-759E-498B-A96F-960D69041954}
+		{7091616D-5CC1-4133-8D81-04C5FC2D069E} = {39900BED-3956-46AA-B4B2-5D53569BBFB7}
+		{4D7368ED-C5BD-4FEA-A165-E89D517B22AA} = {9498AAAE-759E-498B-A96F-960D69041954}
+		{610C0584-03CD-464C-8E82-2482A55259B1} = {9498AAAE-759E-498B-A96F-960D69041954}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC20B5D1-4234-4E55-8D02-97A9D80F5A6E}

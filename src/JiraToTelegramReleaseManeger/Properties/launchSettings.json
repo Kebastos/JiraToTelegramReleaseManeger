@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "JiraToTelegramReleaseManeger": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "NETCORE_ENVIRONMENT": "Local"
+      }
+    }
+  }
+}
